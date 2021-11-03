@@ -7,33 +7,58 @@ body{
     position: fixed;
     width: 80%;
     height: 80%;
-    /*border: 0.25em solid currentColor;*/
-    /*border-radius: 50%;*/
     text-align: center;
     z-index: 1;
 }
+/*position: relative;*/
+/*left: 50%;*/
+/*top: 50%;*/
+/*width: 80px;*/
+/*font-size:20px;*/
+/*padding-top:30px;*/
+/*padding-bottom:30px;*/
+/*text-align: center;*/
+
 .loader{
-    top: 50%;
-    height: 48px;
-    width: 48px;
-    display: inline-block;
     position: relative;
+    left: 50%;
+    top: 50%;
+    width: 120px;
+    height: 130px;
+    font-size:20px;
+    padding-bottom:30px;
+    text-align: center;
     border: 5px solid currentColor;
     border-radius: 50%;
-    border-top-color: transparent;
-    animation: rotate 1s linear infinite;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    /*animation: rotate 1s linear infinite;*/
 }
 .loader::after {
+    position: relative;
     content: '';
-    height: 40px;
-    width: 40px;
+    height: 90px;
+    width: 90px;
+    display: block;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    border-top-color: transparent;
+    transform: translate(10px,-65px);
+    animation: rotate .5s linear infinite reverse;
+}
+
+.loader::before {
+    content: '';
+    position: relative;
+    height: 80px;
+    width: 80px;
     display: block;
     color: inherit;
     margin: 10px auto;
-    position: relative;
-    border: 5px solid currentColor;
+    border: 3px solid currentColor;
     border-radius: 50%;
     border-top-color: transparent;
+    transform: translate(-4px,60px);
     animation: rotate .5s linear infinite reverse;
 }
 
