@@ -6,15 +6,15 @@ body{
 .loader-wrapper{
     position: relative;
     left: 50%;
-    top: 50%;
     width: 200px;
     height: 200px;
+    top: 200px;
     font-size:20px;
     /* padding-top:30px;
     padding-bottom:30px; */
     text-align: center;
     vertical-align: text-bottom;
-    border: 10px solid currentColor;
+    border: 5px solid #c9b34e;
     border-right-color: transparent;
     border-bottom-color: transparent;
     border-radius: 50%;
@@ -43,24 +43,13 @@ body{
     width: 90px;
     height: 90px;
     line-height: 90px;
-    border: 5px solid red;
+    border: 5px solid #3e94d3;
     border-right-color: transparent;
     border-left-color: transparent;
     border-radius: 50%;
     -webkit-animation: spinner-border3 .75s linear infinite;
     animation: spinner-border3 .75s linear infinite;
 }
-/* .loader::after{
-    content: ' ';
-    position: relative;
-    left: 0;
-    top: 0;
-    width: 100px;
-    height: 100px;
-    display: block;
-    border: 10px solid yellow;
-    border-radius: 100%;
-} */
 
 @-webkit-keyframes spinner-border1 {
     from {
