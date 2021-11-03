@@ -1,0 +1,87 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+.spinner-border {
+    display: inline-block;/* allows to set a width and height on the element. */
+    width: 2rem;/* 2 times the root width */
+    height: 2rem;/* 2 times the root height*/
+    vertical-align: -0.125em;/* set the vertical alignment of an inline which value is -0.125em */
+    border: 0.25em solid currentColor;/* set the border parameters */
+    border-right-color: transparent;/* set the border right color to transparent which can be seen to the gap of the circle*/
+    border-radius: 50%;/* set the rounds corner*/
+    -webkit-animation: 0.75s linear infinite spinner-border;
+    animation: 0.75s linear infinite spinner-border;/* set the animation parameters of the spinner loader*/
+}
+
+@-webkit-keyframes spinner-border {
+    to {
+        -webkit-transform: rotate(360deg);/* Let this loader spin up */
+        transform: rotate(360deg);/* Let this loader spin up */
+    }
+}
+
+@keyframes spinner-border {
+    to {
+        -webkit-transform: rotate(360deg);/* Let this loader spin up */
+        transform: rotate(360deg);/* Let this loader spin up */
+    }
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
